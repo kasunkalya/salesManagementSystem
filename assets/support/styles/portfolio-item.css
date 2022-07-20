@@ -1,0 +1,48 @@
+/*!
+ * Start Bootstrap - Portfolio Item HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    /*padding-top: 70px; !* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *!*/
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 0px 0;
+}
+
+
+.container{
+    margin-top: 100px;
+    width: 100%!important;
+}
+.containerdetail{
+    margin-top: 10px !important;
+}
+/*@media only screen and (max-width: 600px) {*/
+    /*.container{*/
+
+        /*padding-top: 30px;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (max-width: 700px) {*/
+    /*.container{*/
+
+        /*padding-top: 90px;*/
+    /*}*/
+/*}*/
+/*@media only screen and (max-width: 980px) {*/
+    /*.container{*/
+
+        /*padding-top: 150px;*/
+    /*}*/
+/*}*/
+.inqurybutton{
+    margin: 10px;
+}

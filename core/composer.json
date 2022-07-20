@@ -1,0 +1,64 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"laravel/framework": "5.1.*",
+		"cartalyst/sentinel": "2.0.*",
+		"doctrine/dbal":"~2.3",
+		"laravelcollective/html": "5.1.*",
+	    "intervention/image": "2.*",
+	    "intervention/imagecache": "2.*",
+		"baum/baum": "~1.1"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1"
+	},
+	"autoload": {
+		"classmap": [
+			"database",
+			"app/Models"
+		],
+		"psr-4": {
+			"App\\"                   : "app/",
+			"Modules\\UserManage\\"     : "app/Packages/modules/user-management/src/",
+			"Modules\\MenuManage\\"     : "app/Packages/modules/menu-management/src/",
+			"Modules\\Permissions\\"    : "app/Packages/modules/permissions/src/",
+			"Modules\\UserRoles\\"      : "app/Packages/modules/user-roles/src/",
+			"Modules\\Product\\"      : "app/Packages/modules/product/src/",
+			"Modules\\Customer\\"      : "app/Packages/modules/customer/src/",
+			"Modules\\Orders\\"      : "app/Packages/modules/orders/src/"
+
+
+
+		}
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php -r \"copy('.env.example', '.env');\"",
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist",
+		"allow-plugins": {
+			"kylekatarnls/update-helper": true
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "name": "modules/user-management",
+    "description": "Admin Panel User Management",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kasun kalya",
+            "email": "kasun.kalya@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Modules\\UserManage\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support" : "~5"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "modules/menu-management",
+    "description": "Admin Panel Menu Management",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kasun kalya",
+            "email": "kasun.kalya@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Modules\\MenuManage\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support" : "~5"
+    }
+}
